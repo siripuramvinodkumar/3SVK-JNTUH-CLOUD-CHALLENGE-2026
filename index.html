@@ -8,14 +8,32 @@
 		<link rel="icon" type="image/x-icon" href="images/3svk_logo.jpg">
 
 		<style>
+			/* Infinity-style mesh gradient background */
+			body {
+				background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0f0f1a 100%);
+				color: #e0e0e0;
+			}
+			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
+			
 			#top .image.fit { margin-top: 2em; }
-			header h1 { line-height: 1.2; margin-bottom: 0.5em; }
+			header h1 { line-height: 1.2; margin-bottom: 0.5em; color: #fff; }
 			.contact-info p { margin-bottom: 0.5em; }
-			/* Designed boxes for the timeline in 2 columns */
-			.phase-box { background: #fff; padding: 1.5em; border: 2px solid #333; border-radius: 8px; margin-bottom: 20px; height: 100%; }
-			.phase-box h3 { margin-top: 0; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-			.box.style1 { margin-bottom: 20px; }
+			
+			/* Attractive 2-column phase boxes */
+			.phase-box { 
+				background: rgba(255, 255, 255, 0.05); 
+				padding: 1.5em; 
+				border: 1px solid #444; 
+				border-radius: 12px; 
+				margin-bottom: 20px; 
+				height: 100%; 
+				transition: 0.3s;
+			}
+			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.2); }
+			.phase-box h3 { color: #00d4ff; border-bottom: 1px solid #444; padding-bottom: 10px; }
+			
 			.track-box { margin-bottom: 2em; }
+			.box.style2 { background: rgba(0,0,0,0.3); border: 1px solid #333; }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -56,12 +74,7 @@
 					</header>
 					
 					<div class="row">
-						<div class="col-12">
-							<div class="phase-box">
-								<h3>🚨 Season 1 Notice</h3>
-								<p><strong>Period:</strong> 23 May 26 – 31 May 26. The execution of the National Cloud Innovation Challenge (Season 1) has been independently managed by the 3SVK Ecosystem Platform (Registered MSME: UDYAM-TS-20-0182112). All compliance, auditing, and blockchain credential curations (via TruScholar) are owned exclusively by the 3SVK enterprise core.</p>
-							</div>
-						</div>
+						<div class="col-12"><div class="phase-box"><h3>🚨 Season 1 Notice</h3><p><strong>Period:</strong> 23 May 26 – 31 May 26. The execution of the National Cloud Innovation Challenge (Season 1) has been independently managed by the 3SVK Ecosystem Platform (Registered MSME: UDYAM-TS-20-0182112). All compliance, auditing, and blockchain credential curations (via TruScholar) are owned exclusively by the 3SVK enterprise core.</p></div></div>
 						
 						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-1: REGISTRATION</h3><p>24 Mar – 30 Apr. Registrations till 25 March received max marks; subsequent ones led to deductions.</p></div></div>
 						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-2: IDEA SUBMISSION</h3><p>04 Mar – 24 Apr. Wildcard entries capped at 85/100. Final plagiarism cutoff: April 19.</p></div></div>
@@ -77,7 +90,6 @@
 				<div class="container">
 					<header>
 						<h2>3SVK HACKATHON SEASON 1: 8 SPECIALIZED TRACKS</h2>
-						<p>Addressing real-world challenges in scalability, security, and cost-efficiency.</p>
 					</header>
 					<div class="row">
 						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Confidential Computing</h3><p>Securing data in use with TEEs.</p></article></div>
@@ -94,16 +106,13 @@
 
 		<article id="contact" class="wrapper style4">
 				<div class="container medium">
-					<header>
-						<h2>Partner with the Future</h2>
-					</header>
+					<header><h2>Partner with the Future</h2></header>
 					<div class="row">
 						<div class="col-12 contact-info">
 							<h3>Siripuram Vinod Kumar</h3>
-							<p><strong>Official Mail:</strong> contact@3svk.org</p>
+							<p><strong>Official Mail:</strong> 3svkofficial@gmail.com</p>
 							<p><strong>Primary Mail:</strong> siripuramvinodkumar333@gmail.com</p>
 							<p><strong>Mobile:</strong> +91 9133977976</p>
-							<hr />
 						</div>
 					</div>
 					<footer>

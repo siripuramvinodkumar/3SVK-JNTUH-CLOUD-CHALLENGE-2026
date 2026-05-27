@@ -8,44 +8,17 @@
 		<link rel="icon" type="image/x-icon" href="images/3svk_logo.jpg">
 
 		<style>
-			/* Infinity-style mesh gradient background */
-			body {
-				background: radial-gradient(circle at 50% 50%, #0f0f1a 0%, #05050a 100%);
-				color: #e0e0e0;
-			}
-			
-			/* Global Hackathon Banner */
-			.hackathon-banner {
-				background: linear-gradient(90deg, #00d4ff, #8e44ad);
-				color: white;
-				padding: 1em;
-				text-align: center;
-				font-weight: bold;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				margin-bottom: 2em;
-			}
-
-			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
-			
+			body { background: radial-gradient(circle at 50% 50%, #0f0f1a 0%, #05050a 100%); color: #e0e0e0; }
+			.hackathon-banner { background: linear-gradient(90deg, #00d4ff, #8e44ad); color: white; padding: 1.5em; text-align: center; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.05); overflow: hidden; }
 			header h1 { color: #fff !important; }
-			
-			/* Attractive 2-column phase boxes with Neon Glow */
-			.phase-box { 
-				background: rgba(20, 20, 40, 0.6); 
-				padding: 1.5em; 
-				border: 1px solid #333; 
-				border-radius: 12px; 
-				margin-bottom: 20px; 
-				height: 100%; 
-				transition: 0.4s;
-			}
-			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); transform: translateY(-5px); }
+			.phase-box { background: rgba(20, 20, 40, 0.6); padding: 1.5em; border: 1px solid #333; border-radius: 12px; margin-bottom: 20px; height: 100%; transition: 0.4s; }
+			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); }
 			.phase-box h3 { color: #00d4ff; border-bottom: 1px solid #444; padding-bottom: 10px; }
-			
 			.track-box { margin-bottom: 2em; }
-			.box.style2 { background: rgba(255,255,255,0.05); border: 1px solid #444; transition: 0.3s; }
-			.box.style2:hover { background: rgba(0, 212, 255, 0.1); border-color: #00d4ff; }
+			.box.style2 { background: rgba(255,255,255,0.05); border: 1px solid #444; }
+			/* State Section Styling */
+			.state-box { background: rgba(255,255,255,0.05); padding: 1em; border-radius: 8px; margin-bottom: 1em; border-left: 4px solid #00d4ff; }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -53,109 +26,92 @@
 		<div class="hackathon-banner">3SVK Hackathon Season 1: Active Archive</div>
 
 		<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Home</a></li>
-					<li><a href="#status">Challenge Status</a></li>
-					<li><a href="#portfolio">Hackathon Tracks</a></li>
-					<li><a href="#subscribe">Subscribe</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+			<ul class="container">
+				<li><a href="#top">Home</a></li>
+				<li><a href="#status">Challenge Status</a></li>
+				<li><a href="#metrics">Certifications</a></li>
+				<li><a href="#participation">Participation</a></li>
+				<li><a href="#portfolio">Tracks</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
 		<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/3svk_logo.jpg" alt="3SVK Official Logo" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Cloud Innovation Challenge <strong>2026</strong></h1>
-							</header>
-							<p>Welcome to <strong>3SVK</strong>. An elite technical competition designed to foster innovation. Join <strong>2,161+ Verified Registrants</strong> from <strong>500+ colleges</strong> nationwide.</p>
-							<ul class="actions">
-								<li><a href="https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-nehru-technological-university-jntuh-hyderabad-1652247" target="_blank" class="button large scrolly">View on Unstop</a></li>
-							</ul>
-						</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-4"><span class="image fit"><img src="images/3svk_logo.jpg" alt="3SVK Logo" /></span></div>
+					<div class="col-8">
+						<header><h1>Cloud Innovation Challenge <strong>2026</strong></h1></header>
+						<p>Welcome to <strong>3SVK</strong>. An elite technical competition designed to foster innovation. Join <strong>2,161+ Verified Registrants</strong> from <strong>500+ colleges</strong> nationwide.</p>
 					</div>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<article id="status" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>3SVK HACKATHON SEASON 1: STATUS & TIMELINES</h2>
-					</header>
-					
-					<div class="row">
-						<div class="col-12"><div class="phase-box"><h3>🚨 Season 1 Notice</h3><p><strong>Period:</strong> 23 May 26 – 31 May 26. The execution of the National Cloud Innovation Challenge (Season 1) has been independently managed and completed by the 3SVK Ecosystem Platform (Registered MSME: UDYAM-TS-20-0182112). All compliance, auditing, and blockchain credential curations (via TruScholar) are owned exclusively by the 3SVK enterprise core.</p></div></div>
-						
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-1: REGISTRATION</h3><p>24 Mar – 30 Apr. Registrations till 25 March received max marks; subsequent ones led to deductions.</p></div></div>
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-2: IDEA SUBMISSION</h3><p>04 Mar – 24 Apr. Wildcard entries capped at 85/100. Final plagiarism cutoff: April 19.</p></div></div>
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-2.1: MERIT ISSUANCE</h3><p>02 May. Official issuance of Certificate of Merit for the Idea Submission phase.</p></div></div>
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-3: PROTOTYPE SUBMISSION</h3><p>25 Mar – 25 Apr. Elimination round; required combined .ZIP (Code, Video, README).</p></div></div>
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-4: GRAND JURY & PITCH</h3><p>20 Apr – 30 Apr. Final rankings via Phase 3 scores. Live defense requirements waived.</p></div></div>
-						<div class="col-6 col-12-small"><div class="phase-box"><h3>PHASE-5: CERTIFICATE ISSUANCE</h3><p>02 May – 31 May. Final synchronization; available for download until May 31, 2026.</p></div></div>
-					</div>
+			<div class="container">
+				<header><h2>STATUS & TIMELINES</h2></header>
+				<div class="row">
+					<div class="col-12"><div class="phase-box"><h3>🚨 Season 1 Notice & TruScholar Partnership</h3><p>The National Cloud Innovation Challenge (Season 1) was independently managed by the 3SVK Ecosystem (MSME: UDYAM-TS-20-0182112). All compliance, project database auditing, and blockchain certificate authentications are delivered via our official partner, <strong>TruScholar</strong>.</p></div></div>
+					<div class="col-6"><div class="phase-box"><h3>PHASE-1: REGISTRATION</h3><p>24 Mar – 30 Apr. Registrations till 25 March received max marks.</p></div></div>
+					<div class="col-6"><div class="phase-box"><h3>PHASE-2: IDEA SUBMISSION</h3><p>04 Mar – 24 Apr. Wildcard entries capped at 85/100 points.</p></div></div>
 				</div>
-			</article>
+			</div>
+		</article>
+
+		<article id="metrics" class="wrapper style1">
+			<div class="container">
+				<header><h2>Achievement Metrics</h2></header>
+				<div class="row aln-center">
+					<div class="col-6"><div class="phase-box"><h3>1,700+ Verified Credentials</h3><p>Blockchain-secured certificates issued via TruScholar to national finalists and participants.</p></div></div>
+					<div class="col-6"><div class="phase-box"><h3>636+ Elite Innovators</h3><p>Deep-tech talent vetted through 8 specialized engineering tracks.</p></div></div>
+				</div>
+			</div>
+		</article>
+
+		<article id="participation" class="wrapper style2">
+			<div class="container">
+				<header><h2>National Participation Map</h2></header>
+				<div class="state-box">
+					<h3>Telangana (150+ Colleges)</h3>
+					<p>JNTUH, NRCM, KMIT, GRIET, GNITS, IARE</p>
+				</div>
+				<div class="state-box">
+					<h3>Tamil Nadu (120+ Colleges)</h3>
+					<p>SNS College of Technology, SRM IST, Chennai Institute of Technology</p>
+				</div>
+				<div class="state-box">
+					<h3>Maharashtra & Others</h3>
+					<p>VIT Pune, PCCOE Pune, and 300+ colleges across 17 other states.</p>
+				</div>
+			</div>
+		</article>
 
 		<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>3SVK HACKATHON SEASON 1: 8 SPECIALIZED TRACKS</h2>
-					</header>
-					<div class="row">
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Confidential Computing</h3><p>Securing data in use with TEEs.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>AI Inference Efficiency</h3><p>Optimizing cloud-native AI workloads.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Zero-Day Protection</h3><p>Proactive defense architectures for cloud infrastructure.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Sustainable Orchestration</h3><p>Energy-efficient workload management.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Cloud Security Shielding</h3><p>Advanced mitigation of DDoS and injection attacks.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>IoT-Cloud Integration</h3><p>Secure edge-to-cloud data pipelines.</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Serverless Security</h3><p>Hardening functions-as-a-service (FaaS).</p></article></div>
-						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Hybrid Cloud Governance</h3><p>Unified security policies across multi-cloud environments.</p></article></div>
-					</div>
-					<footer style="text-align: center; margin-top: 2em;">
-						<a href="https://drive.google.com/file/d/1jSVUBO-8Zh21NzrMT1zwkc4MZOhtDbMI/view" target="_blank" class="button large">Download Full Technical Guidelines</a>
-					</footer>
+			<div class="container">
+				<header><h2>8 SPECIALIZED TECHNICAL TRACKS</h2></header>
+				<div class="row">
+					<div class="col-3 track-box"><article class="box style2"><h3>Confidential Computing</h3><p>Securing data in use with TEEs.</p></article></div>
+					<div class="col-3 track-box"><article class="box style2"><h3>AI Inference Efficiency</h3><p>Optimizing cloud-native AI workloads.</p></article></div>
+					<div class="col-3 track-box"><article class="box style2"><h3>Zero-Day Protection</h3><p>Proactive defense architectures.</p></article></div>
+					<div class="col-3 track-box"><article class="box style2"><h3>Sustainable Orchestration</h3><p>Energy-efficient management.</p></article></div>
 				</div>
-			</article>
-
-		<article id="subscribe" class="wrapper style2">
-				<div class="container medium">
-					<header>
-						<h2>Join the 3SVK Network</h2>
-						<p>Subscribe to stay updated on future hackathons, webinars, and micro-skilling opportunities.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-12">
-							<ul class="actions stacked aln-center">
-								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8cDgfOQ9zqC908HECZ3vHf1sykXjn1VPPx6LpVcVcbkN5HQ/viewform?usp=sf_link" target="_blank" class="button large primary">Subscribe via Official Form</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</article>
+				<footer style="text-align: center;"><a href="https://drive.google.com/file/d/1jSVUBO-8Zh21NzrMT1zwkc4MZOhtDbMI/view" class="button large">Download Guidelines</a></footer>
+			</div>
+		</article>
 
 		<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header><h2>Partner with the Future</h2></header>
-					<div class="row">
-						<div class="col-12 contact-info">
-							<h3>Siripuram Vinod Kumar</h3>
-							<p><strong>Official Mail:</strong> 3svkofficial@gmail.com</p>
-							<p><strong>Primary Mail:</strong> siripuramvinodkumar333@gmail.com</p>
-							<p><strong>Mobile:</strong> +91 9133977976</p>
-						</div>
+			<div class="container medium">
+				<header><h2>Contact</h2></header>
+				<div class="row">
+					<div class="col-12">
+						<h3>Siripuram Vinod Kumar</h3>
+						<p><strong>Official Mail:</strong> 3svkofficial@gmail.com | <strong>Primary:</strong> siripuramvinodkumar333@gmail.com</p>
+						<p><strong>Mobile:</strong> +91 9133977976</p>
 					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; 3SVK 2026. All rights reserved.</li>
-							<li>Enterprise: Registered MSME (UDYAM-TS-20-0182112)</li>
-						</ul>
-					</footer>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/main.js"></script>

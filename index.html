@@ -10,33 +10,47 @@
 		<style>
 			/* Infinity-style mesh gradient background */
 			body {
-				background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0f0f1a 100%);
+				background: radial-gradient(circle at 50% 50%, #0f0f1a 0%, #05050a 100%);
 				color: #e0e0e0;
 			}
-			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
 			
-			#top .image.fit { margin-top: 2em; }
-			header h1 { line-height: 1.2; margin-bottom: 0.5em; color: #fff; }
-			.contact-info p { margin-bottom: 0.5em; }
+			/* Global Hackathon Banner */
+			.hackathon-banner {
+				background: linear-gradient(90deg, #00d4ff, #8e44ad);
+				color: white;
+				padding: 1em;
+				text-align: center;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-bottom: 2em;
+			}
+
+			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
 			
-			/* Attractive 2-column phase boxes */
+			header h1 { color: #fff !important; }
+			
+			/* Attractive 2-column phase boxes with Neon Glow */
 			.phase-box { 
-				background: rgba(255, 255, 255, 0.05); 
+				background: rgba(20, 20, 40, 0.6); 
 				padding: 1.5em; 
-				border: 1px solid #444; 
+				border: 1px solid #333; 
 				border-radius: 12px; 
 				margin-bottom: 20px; 
 				height: 100%; 
-				transition: 0.3s;
+				transition: 0.4s;
 			}
-			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.2); }
+			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); transform: translateY(-5px); }
 			.phase-box h3 { color: #00d4ff; border-bottom: 1px solid #444; padding-bottom: 10px; }
 			
 			.track-box { margin-bottom: 2em; }
-			.box.style2 { background: rgba(0,0,0,0.3); border: 1px solid #333; }
+			.box.style2 { background: rgba(255,255,255,0.05); border: 1px solid #444; transition: 0.3s; }
+			.box.style2:hover { background: rgba(0, 212, 255, 0.1); border-color: #00d4ff; }
 		</style>
 	</head>
 	<body class="is-preload">
+
+		<div class="hackathon-banner">3SVK Hackathon Season 1: Active Archive</div>
 
 		<nav id="nav">
 				<ul class="container">
@@ -101,7 +115,7 @@
 						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Serverless Security</h3><p>Hardening functions-as-a-service (FaaS).</p></article></div>
 						<div class="col-3 col-6-medium col-12-small track-box"><article class="box style2"><h3>Hybrid Cloud Governance</h3><p>Unified security policies across multi-cloud environments.</p></article></div>
 					</div>
-					<footer>
+					<footer style="text-align: center; margin-top: 2em;">
 						<a href="https://drive.google.com/file/d/1jSVUBO-8Zh21NzrMT1zwkc4MZOhtDbMI/view" target="_blank" class="button large">Download Full Technical Guidelines</a>
 					</footer>
 				</div>

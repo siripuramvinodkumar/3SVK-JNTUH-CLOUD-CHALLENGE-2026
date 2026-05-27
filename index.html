@@ -8,20 +8,43 @@
 		<link rel="icon" type="image/x-icon" href="images/3svk_logo.jpg">
 
 		<style>
-			body { background: radial-gradient(circle at 50% 50%, #0f0f1a 0%, #05050a 100%); color: #e0e0e0; }
+			/* Infinity Mesh Background with Subtle Animation */
+			body {
+				background: radial-gradient(circle at 50% 50%, #0f0f1a 0%, #05050a 100%);
+				color: #e0e0e0;
+				background-attachment: fixed;
+			}
+			
+			/* Hackathon Banners */
 			.season2-banner { background: #ff0055; color: #fff; padding: 0.5em; text-align: center; font-weight: bold; }
 			.season2-banner a { color: #fff; text-decoration: underline; }
 			.hackathon-banner { background: linear-gradient(90deg, #00d4ff, #8e44ad); color: white; padding: 1em; text-align: center; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-			.wrapper { background: rgba(255, 255, 255, 0.03) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
-			header h1 { color: #fff !important; }
-			.phase-box { background: rgba(20, 20, 40, 0.6); padding: 1.5em; border: 1px solid #333; border-radius: 12px; margin-bottom: 20px; height: 100%; transition: 0.4s; }
-			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+
+			.wrapper { background: rgba(255, 255, 255, 0.02) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
+			
+			/* Header Fix: Prevent Wrapping */
+			header h1 { 
+				color: #fff !important; 
+				white-space: nowrap; 
+				font-size: 2.2em !important; 
+			}
+			
+			/* Neon Glow Components */
+			.phase-box { 
+				background: rgba(20, 20, 40, 0.6); padding: 1.5em; border: 1px solid #333; 
+				border-radius: 12px; margin-bottom: 20px; height: 100%; 
+				transition: 0.4s; box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+			}
+			.phase-box:hover { border-color: #00d4ff; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); transform: translateY(-5px); }
 			.phase-box h3 { color: #00d4ff; border-bottom: 1px solid #444; padding-bottom: 10px; }
+			
 			.track-box { margin-bottom: 2em; }
-			.box.style2 { background: rgba(255,255,255,0.05); border: 1px solid #444; }
+			.box.style2 { background: rgba(255,255,255,0.05); border: 1px solid #444; transition: 0.3s; }
+			.box.style2:hover { background: rgba(0, 212, 255, 0.1); border-color: #00d4ff; }
+			
 			.state-box { background: rgba(255,255,255,0.05); padding: 1.5em; border-radius: 8px; margin-bottom: 1em; border-left: 4px solid #00d4ff; }
 			.social-links { list-style: none; padding: 0; }
-			.social-links li { margin-bottom: 10px; }
+			.social-links li a { color: #00d4ff; }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -39,16 +62,16 @@
 				<li><a href="#participation">Participation Map</a></li>
 				<li><a href="#portfolio">Tracks</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="#metrics" style="color:#00d4ff;">Verified Partner: TruScholar</a></li>
+				<li><a href="#metrics" style="color:#00d4ff;">TruScholar Partner</a></li>
 			</ul>
 		</nav>
 
 		<article id="top" class="wrapper style1">
 			<div class="container">
-				<div class="row">
+				<div class="row" style="align-items: center;">
 					<div class="col-4"><span class="image fit"><img src="images/3svk_logo.jpg" alt="3SVK Logo" /></span></div>
 					<div class="col-8">
-						<header><h1>Cloud Innovation Challenge <strong>2026</strong></h1></header>
+						<header><h1>Cloud Innovation Challenge 2026</h1></header>
 						<p>Welcome to <strong>3SVK</strong>. An elite technical competition designed to foster innovation. Join <strong>2,161+ Verified Registrants</strong> from <strong>500+ colleges</strong> nationwide.</p>
 						<ul class="actions">
 							<li><a href="https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-nehru-technological-university-jntuh-hyderabad-1652247" target="_blank" class="button large">View on Unstop</a></li>
@@ -62,7 +85,7 @@
 			<div class="container">
 				<header><h2>3SVK HACKATHON SEASON 1: STATUS & TIMELINES</h2></header>
 				<div class="row">
-					<div class="col-12"><div class="phase-box"><h3>🚨 Season 1 Notice</h3><p>Period: 23 May 26 – 31 May 26. Execution managed by 3SVK Platform (MSME: UDYAM-TS-20-0182112). All compliance, project auditing, and blockchain credentials are owned exclusively by 3SVK.</p></div></div>
+					<div class="col-12"><div class="phase-box"><h3>🚨 Season 1 Notice</h3><p>Period: 23 May 26 – 31 May 26. Execution managed by 3SVK Platform (MSME: UDYAM-TS-20-0182112). All compliance, auditing, and blockchain credentials are owned exclusively by 3SVK.</p></div></div>
 					<div class="col-6"><div class="phase-box"><h3>PHASE-1: REGISTRATION</h3><p>24 Mar – 30 Apr. Registrations till 25 March received max marks.</p></div></div>
 					<div class="col-6"><div class="phase-box"><h3>PHASE-2: IDEA SUBMISSION</h3><p>04 Mar – 24 Apr. Wildcard entries capped at 85/100. Cutoff: April 19.</p></div></div>
 					<div class="col-6"><div class="phase-box"><h3>PHASE-3: PROTOTYPE SUBMISSION</h3><p>25 Mar – 25 Apr. Elimination round; required combined .ZIP.</p></div></div>
@@ -75,12 +98,12 @@
 			<div class="container">
 				<header><h2>Achievement Metrics</h2></header>
 				<div class="row">
-					<div class="col-6"><div class="phase-box"><h3>1,700+ Verified Credentials</h3><p>Blockchain-secured certificates issued via TruScholar to national finalists and participants.</p></div></div>
-					<div class="col-6"><div class="phase-box"><h3>2,161+ Elite Innovators</h3><p>Deep-tech talent vetted through 8 specialized engineering tracks.</p></div></div>
+					<div class="col-6"><div class="phase-box"><h3>1,700+ Verified Credentials</h3><p>Blockchain-secured certificates issued via TruScholar.</p></div></div>
+					<div class="col-6"><div class="phase-box"><h3>2,161+ Elite Innovators</h3><p>Deep-tech talent vetted through 8 specialized tracks.</p></div></div>
 				</div>
 				<div class="state-box">
 					<h3>Verified Partner & MOU Signed</h3>
-					<p><strong>TruScholar:</strong> Official Blockchain Partner for credential verification and secure talent assessment.</p>
+					<p><strong>TruScholar:</strong> Official Blockchain Partner for credential verification.</p>
 				</div>
 			</div>
 		</article>
@@ -90,7 +113,7 @@
 				<header><h2>National Participation Map</h2></header>
 				<div class="state-box"><h3>Telangana (150+ Colleges)</h3><p>JNTUH, NRCM, KMIT, GRIET, GNITS, IARE</p></div>
 				<div class="state-box"><h3>Tamil Nadu (120+ Colleges)</h3><p>SNS College of Technology, SRM IST, Chennai Institute of Technology</p></div>
-				<div class="state-box"><h3>Maharashtra & Others</h3><p>VIT Pune, PCCOE Pune, and 300+ colleges across 17 other states.</p></div>
+				<div class="state-box"><h3>Maharashtra & Others</h3><p>VIT Pune, PCCOE Pune, 300+ colleges across 17 other states.</p></div>
 			</div>
 		</article>
 
@@ -124,9 +147,9 @@
 					<div class="col-6">
 						<h3>Connect with 3SVK</h3>
 						<ul class="social-links">
-							<li><a href="https://chat.whatsapp.com/FMpS9K6cKqf3eyJX80jdbJ">WhatsApp Hub (Real-Time Support)</a></li>
-							<li><a href="https://whatsapp.com/channel/0029VbCoKvoCcW4okw8fh315">WhatsApp Channel (Announcements)</a></li>
-							<li><a href="https://www.linkedin.com/company/3svk/">LinkedIn (Corporate Updates)</a></li>
+							<li><a href="https://chat.whatsapp.com/FMpS9K6cKqf3eyJX80jdbJ">WhatsApp Hub (Support)</a></li>
+							<li><a href="https://whatsapp.com/channel/0029VbCoKvoCcW4okw8fh315">WhatsApp Channel (Updates)</a></li>
+							<li><a href="https://www.linkedin.com/company/3svk/">LinkedIn (Corporate)</a></li>
 							<li><a href="https://www.youtube.com/@3SVKOfficial">YouTube (Masterclasses)</a></li>
 							<li><a href="https://www.instagram.com/3svk_official/">Instagram (Highlights)</a></li>
 						</ul>
@@ -135,15 +158,11 @@
 				<hr>
 				<div class="state-box">
 					<h3>🛡️ 3SVK SAFETY & TRANSPARENCY POLICY</h3>
-					<p><strong>100% Free Ecosystem:</strong> 3SVK is a registered MSME (UDYAM-TS-20-0182112). We NEVER charge fees for participation, training, or certifications.</p>
-					<p><strong>Independent Status:</strong> We are an independently managed talent bridge. Institutional branding serves only for demographic mapping.</p>
-					<p><strong>Anti-Fraud:</strong> Any request for payment is unauthorized. Report immediately to: 3svkofficial@gmail.com</p>
+					<p><strong>100% Free Ecosystem:</strong> MSME Registered (UDYAM-TS-20-0182112). No fees for participation.</p>
+					<p><strong>Anti-Fraud:</strong> Report unauthorized payment requests to: 3svkofficial@gmail.com</p>
 				</div>
 				<footer>
-					<ul id="copyright">
-						<li>&copy; 3SVK 2026. All rights reserved.</li>
-						<li>Enterprise: Registered MSME (UDYAM-TS-20-0182112)</li>
-					</ul>
+					<ul id="copyright"><li>&copy; 3SVK 2026. All rights reserved.</li></ul>
 				</footer>
 			</div>
 		</article>
